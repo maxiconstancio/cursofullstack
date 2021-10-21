@@ -1,0 +1,103 @@
+body {
+    font-family: 'Lobster', cursive;    
+    background-color:beige ;
+    width:100%;
+}
+
+.imagen {
+    
+    float: left;
+    width: 20%;
+    height: 120px;
+    margin-right: 10px;
+}
+
+section, article   {
+   /* margin-top: 10px; */
+    margin:10px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    
+}
+article h2 {
+    margin-top: 0px;
+}
+article p {
+    
+    width: 80%;
+    
+}
+a {
+    text-decoration: none;
+}
+#imagen-nav {
+    
+    text-align: center;
+}
+
+
+
+
+
+.menu li {
+
+    list-style-type: none;
+    background-color: rgb(240, 240, 186);
+    border-color:black;
+    border-style: none;
+    border-width:1px;
+    float: left;
+    text-align: center;
+    width: 15%;
+    
+}
+
+.menu li :hover {
+    color: rgb(136, 136, 132);
+}
+
+header {
+    margin-top:100px;
+}
+
+header  {
+    
+    text-align: center;
+}
+
+formulario {
+    margin: 100px;
+   
+   /* border-style: groove;*/
+}
+
+form {
+    border-style: groove;
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+button {
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+.redes {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.redes li {
+    list-style-type: none;    
+    border-style: none;
+    border-width:1px;
+    float: left;
+    text-align: center;
+    width: 15%;
+
+}
+
