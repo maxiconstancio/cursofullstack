@@ -5,44 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/estilos.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"    crossorigin="anonymous"/>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Tarea N° 2 Curso FullStack </title>
 </head>
 
-<body>
-    <nav>
-        <div id="imagen-nav">
-            <img src="https://www.caracteristicas.co/wp-content/uploads/2019/02/cine-5-e1585960007845.jpg" alt="Cine">
+<body class="container bg-warning">
+    <nav  class="bg-warning">
+        <div class="container ">
+          <img
+            src="https://www.caracteristicas.co/wp-content/uploads/2019/02/cine-5-e1585960007845.jpg"
+            class="img-fluid mx-auto d-block rounded-3"
+            width="50%"
+            alt="Cine"
+          />
         </div>
-        <ul class="menu">
-            <li> <a href="/tarea_1.html">Home</a></li>
-            <li> <a href="tarea_2.html">Formulario Tarea2</a></li>
-            <li> <a href="/tarea_1.html#Accion">Accion</a></li>
-            <li> <a href="/tarea_1.html#Aventuras">Aventuras</a></li>
-            <li> <a href="/tarea_1.html#Dramas">Dramas</a></li>
-            <li> <a href="/tarea_1.html#Terror">Terror</a></li>
-            </li>
-        </ul>
-    </nav>
+  
+        <div class="row row-cols-6 bg-waring bg-gradient">
+          <div class="col col-2 btn btn-secundary bg-warning bg-gradient border border-secondary"> <a class="text-decoration-none  "href="tarea_1.html">Home</a></div>
+          <div class="col col-2 btn btn-secundary bg-warning bg-gradient border border-secondary"><a class="text-decoration-none "href="tarea_2.html">Formulario</a></div>
+          <div class="col col-2 btn btn-secundary bg-warning bg-gradient border border-secondary"><a class="text-decoration-none "href="tarea_1.html#Accion">Accion</a></div>
+          <div class="col col-2 btn btn-secundary bg-warning bg-gradient border border-secondary"><a class="text-decoration-none "href="tarea_1.html#Aventuras">Aventuras</a></div>
+          <div class="col col-2 btn btn-secundary bg-warning bg-gradient border border-secondary"><a class="text-decoration-none "href="tarea_1.html#Dramas">Dramas</a></div>
+          <div class="col col-2 btn btn-secundary bg-warning bg-gradient border border-secondary"><a class="text-decoration-none "href="tarea_1.html#Terror">Terror</a></div>
+        </div>
+      </nav>
 
-    <div formulario>
+        <hr>
         <form onsubmit="alert(' Formulario Enviado')">
-            <br>
-            <label><b>Ingrese su nombre</b></label>
-            <input type="text" name="nombre" placeholder="Ingrese su nombre">
-            <br>
-            <br>
-            <label for="sexo"><b>Sexo: </b></label>
-            <input type="radio" name="sexo"> Mujer </input>
-            <input type="radio" name="sexo"> Hombre </input>
-            <input type="radio" name="sexo"> No binario </input>
-            <br>
-            <br>
+            
+            <div class="mb-3">
+            <label for="nombre" class="form-label"><b>Ingrese su nombre</b></label>
+            <input class="form-control" type="text" id= "nombre" name="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <label class="form-label" for="sexo"><b>Sexo: </b></label>
+            <input class= "form-check-input" type="radio" name="sexo"> Mujer </input>
+            <input class= "form-check-input" type="radio" name="sexo"> Hombre </input>
+            <input class= "form-check-input" type="radio" name="sexo"> No binario </input>
+            
             ​
             <hr>
-            <br>
-            <label><b>Género de Peliculas Favorito:</b></label>
-            <select>
+            
+            <label class="form-label"><b>Género de Peliculas Favorito:</b></label>
+            <select class="form-select">
                 <option value="Accion">Accion</option>
                 <option value="Aventura">Aventura</option>
                 <option value="Drama">Drama</option>
@@ -51,8 +59,8 @@
             <br>
             <br>
 
-            <label><b>Segundo Género de Peliculas Favorito:</b></label>
-            <select>
+            <label class="form-label"><b>Segundo Género de Peliculas Favorito:</b></label>
+            <select class="form-select" >
                 <option value="Accion">Accion</option>
                 <option value="Aventura">Aventura</option>
                 <option value="Drama">Drama</option>
@@ -61,26 +69,37 @@
             <br>
             <br>
             <hr>
-            <label><b>Con quien le gusta ir al Cine?</b></label>
-            <br>
-            <br>
-            <input type="checkbox">Solo
-            <input type="checkbox">Con mi pareja
-            <input type="checkbox">Con la familia entera
-            <br>
-            <br>
-            <hr>
-            <button type="submit">Enviar Formulario</button>
+            <fieldset class="row mb-3">
+            <label class="form-label col-form-label col-sm-2 pt-0"><b>Con quien le gusta ir al Cine?</b></label>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">Solo</input>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">Con mi pareja</input>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">Con la familia entera</input>
+                </div>
+            </div>
+            </fieldset>
+            <div class="col-auto">
+            <button class="btn btn-primary mb-3 justify-content-center" type="submit">Enviar Formulario</button>
+            </div>
         </form>
-    </div>
+    
     <hr>
     <footer>
-      <ul class="redes">
-        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+        <div class="row justify-content-center">
+        <div class="col-4 justify-content-center">
+          <a class="text-decoration-none" href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>  
+        <div class="col-4 justify-content-center"><a class="text-decoration-none" href="https://www.facebook.com" target="_blank">Facebook</a>
+        </div>  
+        <div class="col-4 justify-content-center"><a class="text-decoration-none" href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
         
-      </ul>
+      </div>
     </footer>
 </body>
 

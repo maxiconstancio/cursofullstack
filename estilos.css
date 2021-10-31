@@ -1,5 +1,8 @@
+* {
+    font-family: 'Lobster', cursive; 
+}
 body {
-    font-family: 'Lobster', cursive;    
+       
     background-color:beige ;
     width:100%;
 }
@@ -7,7 +10,7 @@ body {
 .imagen {
     
     float: left;
-    width: 20%;
+    width: 15%;
     height: 120px;
     margin-right: 10px;
 }
@@ -101,3 +104,6 @@ button {
 
 }
 
+/*.img-nav {
+    width: 40%;
+}*/
